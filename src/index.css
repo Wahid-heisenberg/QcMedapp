@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'Recoleta';
+  src: url('./Recoleta/Recoleta-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Recoleta', serif;
+  --primary-color: #6E98BC;
+  --third-color: #1D4260;
+  --secondary-color: #79C9BC;
+  --fourth-color: #5B8BB2;
+  --fivth-color:#79C9BC;
+  --black-color: #3C3C3C;
+  --grey-1: #818181;
+  --grey-2: #D9D9D9;
+  --grey-3: #333;
+  --white-color: #fff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--grey-2);
+}
+
+
+a {
+  text-decoration: none;
+}
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+@media screen and (max-width: 480px) {
+  .pic1 {
+display: none;
+  }
+  .pic4 {
+    display: none;
+      }
+}
