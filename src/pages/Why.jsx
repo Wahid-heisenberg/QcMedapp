@@ -20,7 +20,7 @@ const Container = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  ${mobile({marginTop:'75vh'})}
+  ${mobile({marginTop:'135vh'})}
 `;
 const Argument = styled.div`
   display: flex;
@@ -34,9 +34,11 @@ const Text = styled.h2`
   color: rgba(51, 51, 51, 0.8);
   font-size: 28px;
   font-weight: 600;
+  ${mobile({fontSize:'18px'})}
 `;
 const Text2 = styled.span`
   font-size: 28px;
+  ${mobile({fontSize:'18px'})}
   color: #222221;
   font-weight: 600;
   margin-top: 64px;

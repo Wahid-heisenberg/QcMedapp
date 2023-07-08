@@ -62,6 +62,7 @@ const Contact = styled.div`
   font-weight: 500;
   letter-spacing: 4.73px;
   margin-bottom: 32px;
+  ${mobile({flexDirection:'column',padding:' 0px 8px'})}
 `;
 const LeftContact = styled.div`
   display: flex;
@@ -108,7 +109,7 @@ const Footer = () => {
       <Contact>
         <LeftContact>
           <PhoneIcon />
-          <span>0542788740 Numero de Ahmed</span>
+          <span>0541129179 Numero de telephone</span>
         </LeftContact>
         <RightContact>
           <GmailIcon />

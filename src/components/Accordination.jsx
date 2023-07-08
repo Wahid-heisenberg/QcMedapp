@@ -22,7 +22,7 @@ const Title = styled.button`
   font-weight: 500;
   letter-spacing: 2.25px;
   padding: 24px 48px 24px 64px;
-  ${mobile({fontSize:'24px',padding:'14px 38px 14px 48px'})}
+  ${mobile({fontSize:'22px',padding:'14px 11px '})}
 `;
 const Content = styled.div`
   border-radius: 17px;
@@ -34,7 +34,7 @@ const Content = styled.div`
   font-weight: 500;
   margin-bottom: 16px;
   letter-spacing: 2.25px;
-  ${mobile({fontSize:'24px',padding:'36px'})}
+  ${mobile({fontSize:'24px',padding:'16px'})}
 `;
 
 const Accordination = (props) => {

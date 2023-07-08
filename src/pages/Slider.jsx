@@ -17,7 +17,7 @@ const Container = styled.section`
   background-color: var(--fivth-color);
   padding: 24px 74px;
   ${mobile({
-  padding:  "24px 14px"
+    padding: "24px 4px",
   })}
 `;
 const Title = styled.h1`
@@ -25,7 +25,7 @@ const Title = styled.h1`
   font-size: 42px;
   font-weight: 600;
   ${mobile({
- fontSize:  "28px"
+    fontSize: "28px",
   })}
 `;
 
@@ -45,14 +45,16 @@ const CommentsTop = styled.div`
     height: 100%;
     transform: scale(0.8);
     opacity: 0.6;
+    ${mobile({ transform: "scale(1)" })}
   }
   & .active {
     transform: scale(1.2);
+    ${mobile({ transform: "scale(1.7)" })}
     margin: 0px 32px;
     opacity: 1;
   }
   ${mobile({
-  padding: "24px 14px"
+    padding: "24px 0px",
   })}
 `;
 const Comment = styled.h1`
@@ -61,7 +63,7 @@ const Comment = styled.h1`
   font-weight: 580;
   margin-bottom: 32px;
   ${mobile({
- fontSize:  "28px"
+    fontSize: "28px",
   })}
 `;
 const Name = styled.h2`
@@ -69,7 +71,7 @@ const Name = styled.h2`
   font-size: 32px;
   font-weight: 550;
   ${mobile({
- fontSize:  "24px"
+    fontSize: "24px",
   })}
 `;
 const Date = styled.h2`
@@ -77,7 +79,7 @@ const Date = styled.h2`
   font-size: 32px;
   font-weight: 550;
   ${mobile({
- fontSize:  "24px"
+    fontSize: "24px",
   })}
 `;
 const ImageContainer = styled.div`
@@ -87,7 +89,6 @@ const ImageContainer = styled.div`
   justify-content: center;
   aspect-ratio: 1/1;
   overflow: hidden;
-
   & > * {
     width: 100%;
     height: 100%;
@@ -103,7 +104,7 @@ const LeftArrowContainer = styled.button`
   top: 50%;
   left: 0px;
   transform: translateY(-50%);
-
+  ${mobile({ left: "-28px" })}
 `;
 const RightArrowContainer = styled.button`
   display: flex;
@@ -114,6 +115,7 @@ const RightArrowContainer = styled.button`
   border: none;
   top: 50%;
   right: 0px;
+  ${mobile({ right: "-28px" })}
   transform: translateY(-50%);
 `;
 const Slider = () => {
@@ -169,7 +171,7 @@ const Slider = () => {
         </LeftArrowContainer>
         <ImageContainer>
           <img
-           className="pic1"
+            className="pic1"
             src={
               Comments[
                 (currentImageIndex - 2 + Comments.length) % Comments.length
@@ -188,7 +190,7 @@ const Slider = () => {
             alt="pic1"
           />
         </ImageContainer>
-        <ImageContainer className="active" >
+        <ImageContainer className="active">
           <img src={Comments[currentImageIndex].image} alt="pic1" />
         </ImageContainer>
         <ImageContainer>
@@ -203,7 +205,7 @@ const Slider = () => {
         </ImageContainer>
         <ImageContainer>
           <img
-           className="pic4"
+            className="pic4"
             src={
               Comments[
                 (currentImageIndex + 2 + Comments.length) % Comments.length
